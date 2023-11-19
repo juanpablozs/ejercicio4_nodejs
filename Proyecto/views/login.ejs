@@ -8,17 +8,22 @@
 <body>
   <h1>Página de Login</h1>
   
-  <!-- Agrega aquí el formulario de login -->
   <form action="/login" method="post">
-    <!-- Agrega los campos de usuario y contraseña -->
     <label for="username">Usuario:</label>
     <input type="text" id="username" name="username" required>
     
     <label for="password">Contraseña:</label>
     <input type="password" id="password" name="password" required>
     
-    <button type="submit">Iniciar sesión</button>
+    <button type="submit" onclick="showAlert()">Iniciar sesión</button>
   </form>
+
+  <script>
+    function showAlert() {
+      alert('Login exitoso!');
+    }
+  </script>
+
 </body>
 </html>
 

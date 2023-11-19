@@ -8,14 +8,12 @@
 <body>
   <h1>Página de Inicio</h1>
   
-  <!-- Lista de elementos -->
   <ul>
     <% for (let i = 0; i < elementos.length; i++) { %>
-      <li><%= elementos[i] %></li>
+      <li><%= elementos[i].nombre %> - <%= elementos[i].precio %></li>
     <% } %>
   </ul>
   
-  <!-- Botón de login -->
   <button onclick="window.location.href='/login'">Login</button>
 </body>
 </html>
