@@ -1,0 +1,22 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inicio</title>
+</head>
+<body>
+  <h1>Página de Inicio</h1>
+  
+  <!-- Lista de elementos -->
+  <ul>
+    <% for (let i = 0; i < elementos.length; i++) { %>
+      <li><%= elementos[i] %></li>
+    <% } %>
+  </ul>
+  
+  <!-- Botón de login -->
+  <button onclick="window.location.href='/login'">Login</button>
+</body>
+</html>
+
